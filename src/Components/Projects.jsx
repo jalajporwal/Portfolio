@@ -15,51 +15,6 @@ import RemoveIcon from "@material-ui/icons/Remove";
 const Projects = () => {
   const items = [
     {
-      cardTitle: "CLI Package - Data Protection",
-      cardDetailedText: [
-        "Automated data transfer between on-premises & AWS cloud using shell script CLI package.",
-        "Bundled & encrypted data in transit with OpenSSL, decrypted at destination.",
-        "Created a secure channel using OpenSSH & stored data in AWS S3 bucket.",
-        "Developed a key management service(KMS) using EC2 Instance for encryption / decryption keys.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["Shell Script", "AWS", "OpenSSL", "OpenSSH"],
-      links: [
-        {
-          url: "https://github.com/Suyog-007/Barcalays-Data-Protection-CLI-Package",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
-      cardTitle: "KRYPT - Cryptocurrency Website",
-      cardDetailedText: [
-        "Developed a website that enables users to conduct transactions using the Ethereum cryptocurrency",
-        "Also providing real-time access to market data & news related to cryptocurrencies.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: [
-        "ReactJS",
-        "Tailwind",
-        "ExpressJS",
-        "NodeJS",
-        "Solidity",
-        "MetaMask",
-      ],
-      links: [
-        {
-          url: "https://gilded-madeleine-f072d2.netlify.app/",
-          text: "Website Link",
-        },
-        {
-          url: "https://github.com/Suyog-007/CryptoExhangePlatform",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
       cardTitle: "REAL TIME PERSON FINDER USING FACE RECOGNITION SYSTEM",
       cardDetailedText: [
         "Creating dataset a facial image dataset involves capturing images of individuals under various conditions like lighting, angles, and expressions. MATLAB's image acquisition and processing tools streamline the process, ensuring a diverse dataset.",
@@ -125,19 +80,19 @@ const Projects = () => {
     //         },
     //       ],
     //     },
-    // {
-    //   cardTitle: "Justalk",
-    //     cardDetailedText: "A chat application made using React and Firebase Auth",
-    //       technologies: ["React JS", "Firebase"],
-    //         links: [
-    //           {
+     {
+       cardTitle: "Justalk",
+         cardDetailedText: "A chat application made using React and Firebase Auth",
+           technologies: ["MongoDB", "Firebase"],
+             links: [
+               {
 
-    //           },
-    //           {
+               },
+               {
 
-    //           },
-    //         ],
-    //     },
+               },
+             ],
+         },
   ];
 
   const [limit, setLimit] = useState(3);
